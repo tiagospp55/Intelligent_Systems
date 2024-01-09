@@ -112,6 +112,7 @@ class MyTree(SearchTree):
             print('len1', len(self.open_nodes))
             print('lennewnodes', len(lnewnodes))
             if self.strategy == 'A*' and self.maxsize is not None and (self.non_terminals + 1 + len(self.open_nodes)) > self.maxsize:
+                    print('a')
                     self.open_nodes = self.manage_memory()
                     print('len2', len(self.open_nodes))
 
